@@ -55,7 +55,7 @@ def editarProduto(id: int, produto: Produto):
         "preco": produto.preco,
         "quantidade": produto.quantidade
     }
-    return {"Mensagem": f"O Produto n {id} foi editado com sucesso"}
+    return {"Mensagem": f"O Produto n{id} foi editado com sucesso"}
 
 @app.delete("/produtos/apagar/{id}")
 def apagarProduto(id: int):
