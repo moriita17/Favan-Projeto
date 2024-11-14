@@ -16,8 +16,8 @@ class Produto(BaseModel):
     preco: float
     quantidade: int
 
-@app.get("/")
-def home():
+@app.get("/Usuarios")
+def Listarusuarios():
     return {"Usuarios": usuarios}
 
 @app.post("/usuarios/inserir")
